@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProcessingElement>
+  <Type>C5D326CE-81C8-44DB-870A-C9A659D33CBC</Type>
+  <Name>Spectrogram</Name>
+  <TemplateType>Plugin</TemplateType>
+  <DevelopmentKitVersion>1.7</DevelopmentKitVersion>
+  <Version>0.1</Version>
+  <OldestCompatibleVersion>0.1</OldestCompatibleVersion>
+  <AliasBase>Spectrogram</AliasBase>
+  <Icon>mixed</Icon>
+  <Description>This plug-in computes a spectrogram on the specified channel and displays the results in a floating window.</Description>
+  <VIExec>niPluginWrapper</VIExec>  
+</ProcessingElement>

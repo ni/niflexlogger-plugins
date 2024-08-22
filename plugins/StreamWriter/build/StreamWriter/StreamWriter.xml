@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProcessingElement>
+  <Type>F8273204-AA1B-4D15-871D-30AC3046D87C</Type>
+  <Name>StreamWriter</Name>
+  <TemplateType>Plugin</TemplateType>
+  <DevelopmentKitVersion>24.5</DevelopmentKitVersion>
+  <Version>0.1</Version>
+  <OldestCompatibleVersion>0.1</OldestCompatibleVersion>
+  <AliasBase>StreamWriter</AliasBase>
+  <Icon>mixed</Icon>
+  <Description>This plug-in demonstrates how to stream data to LabVIEW or another instance of FlexLogger.</Description>
+  <VIExec>niPluginWrapper</VIExec>  
+</ProcessingElement>

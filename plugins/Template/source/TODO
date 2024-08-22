@@ -1,0 +1,5 @@
+# Instructions
+
+Copy the source of your plug-in in this directory.
+The source of your plug-in is typically found in this folder:
+C:\Users\<username>\Documents\LabVIEW Projects\FlexLogger IO Plug-ins\<your plug-in name>

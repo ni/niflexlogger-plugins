@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProcessingElement>
+  <Type>9D1C6E5D-CA3A-4EA3-8161-C567BAA6CC72</Type>
+  <Name>FFT</Name>
+  <TemplateType>Plugin</TemplateType>
+  <DevelopmentKitVersion>24.5</DevelopmentKitVersion>
+  <Version>0.1</Version>
+  <OldestCompatibleVersion>0.1</OldestCompatibleVersion>
+  <AliasBase>FFT</AliasBase>
+  <Icon>mixed</Icon>
+  <Description>This plug-in computes the FFT of a channel, and outputs the result in a new channel that you can log to file.</Description>
+  <VIExec>niPluginWrapper</VIExec>  
+</ProcessingElement>

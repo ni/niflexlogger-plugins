@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProcessingElement>
+  <Type>060F3A8F-8B18-43A2-9E33-F29208415CD8</Type>
+  <Name>StreamReader</Name>
+  <TemplateType>Plugin</TemplateType>
+  <DevelopmentKitVersion>24.5</DevelopmentKitVersion>
+  <Version>0.1</Version>
+  <OldestCompatibleVersion>0.1</OldestCompatibleVersion>
+  <AliasBase>StreamReader</AliasBase>
+  <Icon>mixed</Icon>
+  <Description>This plug-in demonstrates how to read data sent by another instance of FlexLogger with the StreamWriter plug-in.</Description>
+  <VIExec>niPluginWrapper</VIExec>  
+</ProcessingElement>
