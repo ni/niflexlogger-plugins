@@ -12,6 +12,11 @@ This plug-in demonstrates how to display an external window using the PDK that c
 
 ## Getting Started
 
+- This plug-in makes use of the LabVIEW Advanced Signal Processing Toolkit.
+If you want to open the source code, you need to have the toolkit installed.
+You can download the toolkit at the following address:
+https://www.ni.com/en/support/downloads/software-products/download.labview-advanced-signal-processing-toolkit.html
+You don't need the toolkit to run the plug-in.
 - Copy the content of the build folder in C:\Users\Public\Documents\National Instruments\FlexLogger\Plugins\IOPlugins\Spectrogram
 - Launch FlexLogger
 - Configure a channel
@@ -20,6 +25,8 @@ This plug-in demonstrates how to display an external window using the PDK that c
 - Choose the options, select a channel to compute the spectrogram and click OK.
 - A windows pops up showing the spectrogram of the channel.
 - If you close the window, you can reopen it by clicking the "Show Spectrogram Window" button on the right hand side of the plug-in.
+
+![Spectrogram](./Spectrogram.jpg)
 
 ## Support
 
