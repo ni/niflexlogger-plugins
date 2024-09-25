@@ -16,12 +16,12 @@ See [GitHub's official documentation](https://help.github.com/articles/using-pul
 To contribute to this project, it is recommended that you follow these steps:
 
 1. Fork the repository on GitHub.
-2. Create a new folder in the **plugins** directory for your plug-in that follows the folder and
+2. Create a new folder in the **plugins** directory for your plug-in, following the folder and
 file architecture as the Template folder.
 3. Copy your build plug-in in the build folder.
 4. If you wish to share the source code of your plug-in, copy it in the source folder.
 5. Modify the LICENSE and README.md file.
-6. Send a GitHub Pull Request to the main repository's master branch. GitHub
+6. Submit a GitHub Pull Request to the main (default) branch of the upstream repository. GitHub
    Pull Requests are the expected method of code collaboration on this project.
 
 # Developer Certificate of Origin (DCO)
@@ -53,6 +53,9 @@ file architecture as the Template folder.
        this project or the open source license(s) involved.
 
 (taken from [developercertificate.org](https://developercertificate.org/))
+
+Each contributed plug-in is expected to include its own licensing attestation.
+If not, the following license will be the default license.
 
 See [LICENSE](https://github.com/ni/niflexlogger-plugins/blob/main/LICENSE)
 for details about how *niflexlogger-plugins* is licensed.
