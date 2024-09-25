@@ -1,2 +1,15 @@
-# Default code owner for \<reponame\>
-benmont #replace for \<reponame\>
+##############################################################
+#
+# List of approvers/reviewers for niflexlogger-plugins
+#
+##############################################################
+#
+# Get in touch with us via the FlexLogger Community
+#  https://forums.ni.com/t5/FlexLogger/bd-p/1021
+
+# These owners will be the default owners for everything in the repo.
+* @ccaltagi
+* @chadallee
+* @NIbbuchanan
+* @NIthan314
+* @DevinKoopmans

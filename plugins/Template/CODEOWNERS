@@ -1,0 +1,11 @@
+##############################################################
+#
+# List of owners for your plug-in
+#
+##############################################################
+#
+# Learn about CODEOWNERS file format: 
+#  https://help.github.com/en/articles/about-code-owners
+#
+# These owners will be the default owners for this plug-in.
+* @<your github user name>
