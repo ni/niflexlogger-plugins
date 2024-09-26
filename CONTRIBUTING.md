@@ -16,25 +16,17 @@ See [GitHub's official documentation](https://help.github.com/articles/using-pul
 To contribute to this project, it is recommended that you follow these steps:
 
 1. Install [Git](https://git-scm.com/downloads) on your machine if you don't already have it. The following steps are using a basic cmd window, but other applications can be used to interact with git like MSVC, Git GUI, Sourcetree, GitDesktop, etc.
-1. Open a cmd window and navigate to the local drive where you want to copy the FlexLogger Plugin repo. For example (create folder if needed):
-> cd c:\GitDev
-1. Clone the niflexlogger-plugins repo to your local drive: 
-> git clone https://github.com/ni/niflexlogger-plugins.git
-1. Navigate inside the copied folder:
-> cd niflexlogger-plugins
-1. Create your own branch of the repo:
-> git branch "your_branch_name"
-1. Create a new folder in the **plugins** directory for your plug-in, following the folder and
-file architecture as the Template folder.
+1. Open a cmd window and navigate to the local drive where you want to copy the FlexLogger Plugin repo. For example (create folder if needed): > cd c:\GitDev
+1. Clone the niflexlogger-plugins repo to your local drive: > git clone https://github.com/ni/niflexlogger-plugins.git
+1. Navigate inside the copied folder: > cd niflexlogger-plugins
+1. Create your own branch of the repo: > git branch "your_branch_name"
+1. Create a new folder in the **plugins** directory for your plug-in, following the folder and file architecture as the Template folder.
 1. Copy your built plug-in in the build folder.
 1. If you wish to share the source code of your plug-in, copy it in the source folder.
 1. Modify the LICENSE and README.md file to provide details about what your plug-in does and how to use it. Pictures can be very helpful (see other examples for how to accomplish this).
-1. Add all your files to the changelist:
-> git add .
-1. Commit your changes locally. This is useful if you ever need to revert to a previous commit. Good idea to do this when you get code in a good state before making new changes that may break things.
-> git commit -m "Initial commit comments"
-1. Push your changes to GitHub:
-> git push --set-upstream origin "your_branch_name"
+1. Add all your files to the changelist: > git add .
+1. Commit your changes locally. This is useful if you ever need to revert to a previous commit. Good idea to do this when you get code in a good state before making new changes that may break things. > git commit -m "Initial commit comments"
+1. Push your changes to GitHub: > git push --set-upstream origin "your_branch_name"
 
 
 # Developer Certificate of Origin (DCO)
