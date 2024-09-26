@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProcessingElement>
+  <Type>3DC0185D-EE10-4EFD-9EFC-83F3B77E4308</Type>
+  <Name>Test Sequencer</Name>
+  <TemplateType>Plugin</TemplateType>
+  <DevelopmentKitVersion>1.7</DevelopmentKitVersion>
+  <Version>0.1</Version>
+  <OldestCompatibleVersion>0.1</OldestCompatibleVersion>
+  <AliasBase>TestSequencer</AliasBase>
+  <Icon>input</Icon>
+  <Description>This test sequencer outputs a channel of data that represents a test state and keeps track of how many times the sequence has occurred</Description>
+  <VIExec>niPluginWrapper</VIExec>  
+</ProcessingElement>
