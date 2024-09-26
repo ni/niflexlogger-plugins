@@ -27,10 +27,12 @@ To contribute to this project, it is recommended that you follow these steps:
 6. Copy your built plug-in in the build folder. Follow the folder heirarchy of the other examples.
 7. If you wish to share the source code of your plug-in, copy it in the source folder.
 8. Modify the LICENSE and README.md file to provide details about what your plug-in does and how to use it. Pictures can be very helpful (see other examples for how to accomplish this).
+9. Add all your files to the changelist:
+> git add .
 9. Commit your changes locally. This is useful if you ever need to revert to a previous commit. Good idea to do this when you get code in a good state before making new changes that may break things.
 > git commit -m "Initial commit comments"
 10. Push your changes to GitHub:
-> git push
+> git push --set-upstream origin "your_branch_name"
 1. Fork the repository on GitHub.
 2. Create a new folder in the **plugins** directory for your plug-in, following the folder and
 file architecture as the Template folder.
