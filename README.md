@@ -17,6 +17,7 @@ Welcome to the FlexLogger Community Plug-ins repository! This repository serves 
 ## Contributing
 
 We welcome contributions from the community! If you have a plug-in that you’d like to share, please review our contributing guidelines for details on how to submit your work.
+Follow [this link](https://github.com/ni/niflexlogger-plugins/blob/main/CONTRIBUTING.md) for more details on how to contribute.
 
 ## License
 Each plug-in folder is licensed under terms specified by its contributor.
