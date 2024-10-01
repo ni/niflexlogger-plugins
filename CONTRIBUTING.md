@@ -24,7 +24,7 @@ To contribute to this project, it is recommended that you follow these steps:
 1. Copy your built plug-in in the **build folder**. The built plug-in is usually found at **C:\Users\Public\Documents\National Instruments\FlexLogger\Plugins\IOPlugins**
 1. If you wish to share the source code of your plug-in, copy it in the **source folder**. The plug-in source is typically found at **C:\Users\<username>\Documents\LabVIEW Projects\FlexLogger IO Plug-ins**. If you don't want to share the source, you can delete the source folder.
 1. Modify the LICENSE and README.md file to provide details about what your plug-in does and how to use it. Pictures can be very helpful. See other plugins from this repo for how to accomplish this like the Spectrogram or Test Sequencer.
-1. Add all the modified files to the commit using this command: **git add .**
+1. Add all the modified files to the commit using this command: **git add -A**
 1. Commit your changes locally. **git commit -m "Initial commit comments"**
 1. Push your changes to GitHub: **git push --set-upstream origin "your_branch_name"**
 1. Now you can view your changes in the GitHub web page to make sure everything looks as you expect. From the[main page](https://github.com/ni/niflexlogger-plugins/tree/main) click on the "main" pull down button and select your branch.
