@@ -4,11 +4,13 @@ TODO: Include description of your plug-in.
 
 ## PDK version used to build the plug-in
 
-This plug-in was built using version x.x of the FlexLogger Plug-in Development Kit
+This plug-in was built using version x.x of the FlexLogger Plug-in Development Kit. You can find this information in the xml file in your source or build.
+For example, the xml will have a line that looks like this: "<DevelopmentKitVersion>1.5</DevelopmentKitVersion>", so in this case enter 1.5 here.
 
 ## Supported versions of FlexLogger:
 
-Minimum version of FlexLogger supported by your plug-in.
+Minimum version of FlexLogger supported by your plug-in. Once you know the PDK version from above, use this web page to find the corresponding version of FlexLogger that supports it:
+https://www.ni.com/docs/en-US/bundle/flexlogger-plug-in-development-kit/page/software-version-compatibility.html
 
 ## Getting Started
 

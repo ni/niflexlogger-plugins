@@ -14,7 +14,7 @@ Make sure you turn off the Export to CSV option in the FlexLogger project to avo
 1.5
 
 ## Supported versions of FlexLogger:
-FlexLogger 2023 Q1
+FlexLogger 2023 Q1 or later.
 
 ## Getting Started
 - Copy the **build/CSV Export** folder from this repo to C:\Users\Public\Documents\National Instruments\FlexLogger\Plugins\IOPlugins\
