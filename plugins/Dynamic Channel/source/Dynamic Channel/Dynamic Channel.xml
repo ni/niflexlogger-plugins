@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProcessingElement>
+  <Type>AD882868-63EB-388F-72 0-156DB8A63ABB</Type>
+  <Name>Dynamic Channel</Name>
+  <TemplateType>Plugin</TemplateType>
+  <DevelopmentKitVersion>1.3</DevelopmentKitVersion>
+  <Version>0.1</Version>
+  <OldestCompatibleVersion>0.1</OldestCompatibleVersion>
+  <AliasBase>DynamicChannel</AliasBase>
+  <Icon>mixed</Icon>
+  <Description>This plug-in has a user specified number of channels each with their own parameters.</Description>
+  <VIExec>niPluginWrapper</VIExec>  
+</ProcessingElement>
