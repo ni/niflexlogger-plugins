@@ -1,9 +1,10 @@
-# Your Plug-in name
+# DateTimeChannel
 
 This plug-in illustrates how to use a string channel in FlexLogger.
 ![Date Time Configuration](./DateTimeStringChannel.gif)
 
 Here's how it looks when using the result of the channel on the Screens tab:
+
 ![Date Time on Screen](./DataTimeOnScreen.gif)
 
 ## PDK version used to build the plug-in
