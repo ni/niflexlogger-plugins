@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Project Type="Project" LVVersion="22308000">
+<Project Type="Project" LVVersion="23008000">
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="NI.SortType" Type="UInt">3</Property>
@@ -12,8 +12,8 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="CSV Export.lvlib" Type="Library" URL="../CSV Export.lvlib"/>
-		<Item Name="CSV Export.xml" Type="Document" URL="../CSV Export.xml"/>
+		<Item Name="DateTimeChannel.lvlib" Type="Library" URL="../DateTimeChannel.lvlib"/>
+		<Item Name="DateTimeChannel.xml" Type="Document" URL="../DateTimeChannel.xml"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="PluginSDK.lvlibp" Type="LVLibp" URL="/&lt;vilib&gt;/FlexLogger/SDK/PluginSDK.lvlibp">
@@ -42,39 +42,25 @@
 					<Item Name="System Interface.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/FlexLogger/SDK/PluginSDK.lvlibp/PEFClasses/SDK/System Interface/System Interface.lvclass"/>
 					<Item Name="Waveform Consumer Channel.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/FlexLogger/SDK/PluginSDK.lvlibp/PEFClasses/SDK/Waveform Consumer Channel/Waveform Consumer Channel.lvclass"/>
 				</Item>
-				<Item Name="DU64_U32SubtractWithBorrow.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/TSOps.llb/DU64_U32SubtractWithBorrow.vi"/>
-				<Item Name="I128 Timestamp.ctl" Type="VI" URL="/&lt;vilib&gt;/Waveform/TSOps.llb/I128 Timestamp.ctl"/>
-				<Item Name="Timestamp Subtract.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/TSOps.llb/Timestamp Subtract.vi"/>
-				<Item Name="NI_MAPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/measure/NI_MAPro.lvlib"/>
-				<Item Name="NI_AALPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALPro.lvlib"/>
-				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
-				<Item Name="NI_MABase.lvlib" Type="Library" URL="/&lt;vilib&gt;/measure/NI_MABase.lvlib"/>
-				<Item Name="Check for Equality.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/Check for Equality.vi"/>
-				<Item Name="Get File Extension.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Get File Extension.vi"/>
-				<Item Name="NI_Data Type.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/Data Type/NI_Data Type.lvlib"/>
-				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
-				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
 			</Item>
-			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
-			<Item Name="Get Channel Properties.vi" Type="VI" URL="../SubVIs/Get Channel Properties.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
-			<Item Name="CSV Export Packed Library" Type="Packed Library">
+			<Item Name="DateTimeChannel Packed Library" Type="Packed Library">
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
-				<Property Name="Bld_buildCacheID" Type="Str">{20DE674F-9B41-4AEF-90D7-E5AA94213625}</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{226915DB-73E7-4C0A-9E4D-F71AF5730FFA}</Property>
 				<Property Name="Bld_buildSpecDescription" Type="Str">Build Specification for a FlexLogger IO Plug-in*
 
 * You must close and reopen your FlexLogger project in order to import a new build of your IO Plug-in.</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">CSV Export Packed Library</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">DateTimeChannel Packed Library</Property>
 				<Property Name="Bld_excludeDependentPPLs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
 				<Property Name="Bld_localDestDir" Type="Path">/C/Users/Public/Documents/National Instruments/FlexLogger/Plugins/IOPlugins/NI_AB_PROJECTNAME</Property>
-				<Property Name="Bld_previewCacheID" Type="Str">{BF772632-165D-489F-A054-1E8155542BEE}</Property>
-				<Property Name="Bld_version.build" Type="Int">14</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{E1C0FC49-7B3B-47E1-97BB-C4471498E655}</Property>
+				<Property Name="Bld_version.build" Type="Int">1</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Destination[0].destName" Type="Str">CSV Export.lvlibp</Property>
-				<Property Name="Destination[0].path" Type="Path">/C/Users/Public/Documents/National Instruments/FlexLogger/Plugins/IOPlugins/NI_AB_PROJECTNAME/CSV Export.lvlibp</Property>
+				<Property Name="Destination[0].destName" Type="Str">DateTimeChannel.lvlibp</Property>
+				<Property Name="Destination[0].path" Type="Path">/C/Users/Public/Documents/National Instruments/FlexLogger/Plugins/IOPlugins/NI_AB_PROJECTNAME/DateTimeChannel.lvlibp</Property>
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
@@ -82,13 +68,13 @@
 				<Property Name="Destination[1].path" Type="Path">/C/Users/Public/Documents/National Instruments/FlexLogger/Plugins/IOPlugins/NI_AB_PROJECTNAME</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[2].destName" Type="Str">User Folder</Property>
-				<Property Name="Destination[2].path" Type="Path">../builds/NI_AB_PROJECTNAME/CSV Export Packed Library/User/CSV Export</Property>
+				<Property Name="Destination[2].path" Type="Path">../builds/NI_AB_PROJECTNAME/DateTimeChannel Packed Library/User/DateTimeChannel</Property>
 				<Property Name="DestinationCount" Type="Int">3</Property>
 				<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{44F551BC-BC9B-4282-8413-94760D2AD1FD}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{8242BD47-A81A-4267-B03F-23F2A2B0573E}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/CSV Export.lvlib</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/DateTimeChannel.lvlib</Property>
 				<Property Name="Source[1].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[1].Library.atomicCopy" Type="Bool">true</Property>
 				<Property Name="Source[1].Library.LVLIBPtopLevel" Type="Bool">true</Property>
@@ -101,16 +87,16 @@
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">Library</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[2].itemID" Type="Ref">/My Computer/CSV Export.xml</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/DateTimeChannel.xml</Property>
 				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="SourceCount" Type="Int">3</Property>
 				<Property Name="TgtF_companyName" Type="Str">National Instruments</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">CSV Export Packed Library</Property>
-				<Property Name="TgtF_internalName" Type="Str">CSV Export Packed Library</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">DateTimeChannel Packed Library</Property>
+				<Property Name="TgtF_internalName" Type="Str">DateTimeChannel Packed Library</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2024 National Instruments</Property>
-				<Property Name="TgtF_productName" Type="Str">CSV Export Packed Library</Property>
-				<Property Name="TgtF_targetfileGUID" Type="Str">{58A9E4B8-91F3-4562-81A9-B50EE9DA972C}</Property>
-				<Property Name="TgtF_targetfileName" Type="Str">CSV Export.lvlibp</Property>
+				<Property Name="TgtF_productName" Type="Str">DateTimeChannel Packed Library</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{71FFCC22-6C7D-4D9D-89D8-26673BEDF2CD}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">DateTimeChannel.lvlibp</Property>
 				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
 			</Item>
 		</Item>

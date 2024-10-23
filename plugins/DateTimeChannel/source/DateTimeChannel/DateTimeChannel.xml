@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProcessingElement>
+  <Type>4E7E4979-0C58-4FA1-9E1D-914D9687AF80</Type>
+  <Name>DateTimeChannel</Name>
+  <TemplateType>Plugin</TemplateType>
+  <DevelopmentKitVersion>1.7</DevelopmentKitVersion>
+  <Version>0.1</Version>
+  <OldestCompatibleVersion>0.1</OldestCompatibleVersion>
+  <AliasBase>DateTimeChannel</AliasBase>
+  <Icon>input</Icon>
+  <Description>Display the current Date Time in a user specified format</Description>
+  <VIExec>niPluginWrapper</VIExec>  
+</ProcessingElement>
