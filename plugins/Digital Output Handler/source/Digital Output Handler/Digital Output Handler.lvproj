@@ -12,7 +12,6 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="FlexLogger Plug-in Development Kit Manual.pdf" Type="Document" URL="/&lt;resource&gt;/FlexLogger/SDK/FlexLogger Plug-in Development Kit Manual.pdf"/>
 		<Item Name="Digital Output Handler.lvlib" Type="Library" URL="../Digital Output Handler.lvlib"/>
 		<Item Name="Digital Output Handler.xml" Type="Document" URL="../Digital Output Handler.xml"/>
 		<Item Name="Dependencies" Type="Dependencies">
