@@ -8,6 +8,6 @@
   <OldestCompatibleVersion>0.1</OldestCompatibleVersion>
   <AliasBase>DynamicChannel</AliasBase>
   <Icon>mixed</Icon>
-  <Description>This plug-in has a user specified number of channels each with their own parameters.</Description>
+  <Description>This plug-in creates a user-specified number of channels.</Description>
   <VIExec>niPluginWrapper</VIExec>  
 </ProcessingElement>

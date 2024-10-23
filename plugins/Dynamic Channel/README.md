@@ -8,7 +8,7 @@ It was created by following the directions in **FlexLogger Plug-in Development K
 
 ![PDK Manual](./FlexLoggerPlug-inDevelopmentKitManual.pdf)
 
-Since DAQ channels already have multiplier and offset values built into their configuration, this plug-in isn't that useful, but hopefully it will provide a good guide for how to dynamically change the number of channels produced by the plug-in so other real-world use cases can benefit from this example.
+This plug-in can provide a good guide for how to dynamically change the number of channels produced.
 
 ## PDK version used to build the plug-in
 
