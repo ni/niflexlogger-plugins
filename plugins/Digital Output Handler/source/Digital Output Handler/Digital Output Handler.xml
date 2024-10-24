@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProcessingElement>
+  <Type>8C38304D-8867-4FA9-ABA2-CE65F9A1063C</Type>
+  <Name>Digital Output Handler</Name>
+  <TemplateType>Plugin</TemplateType>
+  <DevelopmentKitVersion>1.7</DevelopmentKitVersion>
+  <Version>0.1</Version>
+  <OldestCompatibleVersion>0.1</OldestCompatibleVersion>
+  <AliasBase>DigitalOutputHandler</AliasBase>
+  <Icon>mixed</Icon>
+  <Description>Creates a user specified number of digital input and oputput channels that have the output values mapped to the input values.</Description>
+  <VIExec>niPluginWrapper</VIExec>  
+</ProcessingElement>
