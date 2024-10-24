@@ -8,6 +8,6 @@
   <OldestCompatibleVersion>0.1</OldestCompatibleVersion>
   <AliasBase>DigitalOutputHandler</AliasBase>
   <Icon>mixed</Icon>
-  <Description>This template type provides a starting point for plug-ins that consumes and produces data for FlexLogger. For example, this type performs a custom calculation on several other channels in the system and produces a result which can be logged alongside other FlexLogger channels.</Description>
+  <Description>Creates a user specified number of digital input and oputput channels that have the output values mapped to the input values.</Description>
   <VIExec>niPluginWrapper</VIExec>  
 </ProcessingElement>
