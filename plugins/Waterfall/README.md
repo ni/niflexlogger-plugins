@@ -5,11 +5,11 @@ The plug-in displays 2 waterfall graphs: one of the Power Spectrum of the channe
 
 ## PDK version used to build the plug-in
 
-1.7
+24.5
 
 ## Supported versions of FlexLogger:
 
-2023 Q3 and above
+2024 Q4 and above
 
 ## Getting Started
 
@@ -20,7 +20,7 @@ The plug-in displays 2 waterfall graphs: one of the Power Spectrum of the channe
 - Click the configure (gear) button on the right hand side of the plug-in.
 - Choose the options, select a channel to compute the waterfall and click OK.
 
-![Waterfall Settings](./Waterfall Settings.jpg)
+![Waterfall Settings](./WaterfallSettings.jpg)
 
 - A windows pops up showing the waterfall graphs of the channel.
 - If you close the window, you can reopen it by clicking the "Show waterfall plot" button on the right hand side of the plug-in.
