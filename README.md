@@ -14,6 +14,10 @@ Welcome to the FlexLogger Community Plug-ins repository! This repository serves 
 2. **Install:** Follow the installation instructions provided in each plug-in's README file to integrate it with FlexLogger.
 3. **Contribute:** If you have developed a plug-in you'd like to share, please submit a pull request with your contribution.
 
+## Creating a new plug-in
+
+You can find additional information on how to create a new plug-in in the [FlexLogger Plug-in Development Kit User Manual](https://www.ni.com/docs/en-US/bundle/flexlogger-plug-in-development-kit/page/user-manual-welcome.html).
+
 ## Contributing
 
 We welcome contributions from the community! If you have a plug-in that you’d like to share, please review our contributing guidelines for details on how to submit your work.
