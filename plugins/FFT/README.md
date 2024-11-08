@@ -1,4 +1,4 @@
-# FlexLogger Spectrogram Plug-in
+# FlexLogger FFT Plug-in
 
 This plug-in computes the FFT of one or more channels, and outputs the result in new channels that you can log to file.
 
