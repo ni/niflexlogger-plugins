@@ -1,4 +1,4 @@
-# FlexLogger Spectrogram Plug-in
+# FlexLogger StreamReader Plug-in
 
 This plug-in demonstrates how to read data sent by another instance of FlexLogger with the StreamWriter plug-in that you can find in this repo.
 

@@ -8,6 +8,6 @@
   <OldestCompatibleVersion>0.1</OldestCompatibleVersion>
   <AliasBase>StreamWriter</AliasBase>
   <Icon>mixed</Icon>
-  <Description>This template type provides a starting point for plug-ins that consumes and produces data for FlexLogger. For example, this type performs a custom calculation on several other channels in the system and produces a result which can be logged alongside other FlexLogger channels.</Description>
+  <Description>This plug-in demonstrates how to stream data to LabVIEW or another instance of FlexLogger.</Description>
   <VIExec>niPluginWrapper</VIExec>  
 </ProcessingElement>

@@ -1,4 +1,4 @@
-# FlexLogger Spectrogram Plug-in
+# FlexLogger StreamWriter Plug-in
 
 This plug-in demonstrates how to stream data to LabVIEW or another instance of FlexLogger.
 
