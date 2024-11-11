@@ -14,8 +14,8 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="FlexLogger Plug-in Development Kit Manual.pdf" Type="Document" URL="/&lt;resource&gt;/FlexLogger/SDK/FlexLogger Plug-in Development Kit Manual.pdf"/>
-		<Item Name="StreamWriter.lvlib" Type="Library" URL="../StreamWriter.lvlib"/>
-		<Item Name="StreamWriter.xml" Type="Document" URL="../StreamWriter.xml"/>
+		<Item Name="StreamReader.lvlib" Type="Library" URL="../StreamReader.lvlib"/>
+		<Item Name="StreamReader.xml" Type="Document" URL="../StreamReader.xml"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="PluginSDK.lvlibp" Type="LVLibp" URL="/&lt;vilib&gt;/FlexLogger/SDK/PluginSDK.lvlibp">
@@ -51,22 +51,22 @@
 			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
-			<Item Name="StreamWriter Packed Library" Type="Packed Library">
+			<Item Name="StreamReader Packed Library" Type="Packed Library">
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
-				<Property Name="Bld_buildCacheID" Type="Str">{8A0C9D5E-6D45-4C64-BB06-F954C31793DE}</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{60ABC0BC-C94C-4538-B8CC-03F84D634C59}</Property>
 				<Property Name="Bld_buildSpecDescription" Type="Str">Build Specification for a FlexLogger IO Plug-in*
 
 * You must close and reopen your FlexLogger project in order to import a new build of your IO Plug-in.</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">StreamWriter Packed Library</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">StreamReader Packed Library</Property>
 				<Property Name="Bld_excludeDependentPPLs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
 				<Property Name="Bld_localDestDir" Type="Path">/C/Users/Public/Documents/National Instruments/FlexLogger/Plugins/IOPlugins/NI_AB_PROJECTNAME</Property>
-				<Property Name="Bld_previewCacheID" Type="Str">{58B4E2B7-0BA4-4313-9DFF-0EC7A74654C1}</Property>
-				<Property Name="Bld_version.build" Type="Int">9</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{0C3E0C22-4E58-40C5-98D8-D670F5D28D59}</Property>
+				<Property Name="Bld_version.build" Type="Int">35</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Destination[0].destName" Type="Str">StreamWriter.lvlibp</Property>
-				<Property Name="Destination[0].path" Type="Path">/C/Users/Public/Documents/National Instruments/FlexLogger/Plugins/IOPlugins/NI_AB_PROJECTNAME/StreamWriter.lvlibp</Property>
+				<Property Name="Destination[0].destName" Type="Str">StreamReader.lvlibp</Property>
+				<Property Name="Destination[0].path" Type="Path">/C/Users/Public/Documents/National Instruments/FlexLogger/Plugins/IOPlugins/NI_AB_PROJECTNAME/StreamReader.lvlibp</Property>
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
@@ -74,13 +74,13 @@
 				<Property Name="Destination[1].path" Type="Path">/C/Users/Public/Documents/National Instruments/FlexLogger/Plugins/IOPlugins/NI_AB_PROJECTNAME</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[2].destName" Type="Str">User Folder</Property>
-				<Property Name="Destination[2].path" Type="Path">../builds/NI_AB_PROJECTNAME/StreamWriter Packed Library/User/StreamWriter</Property>
+				<Property Name="Destination[2].path" Type="Path">../builds/NI_AB_PROJECTNAME/StreamReader Packed Library/User/StreamReader</Property>
 				<Property Name="DestinationCount" Type="Int">3</Property>
 				<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{53B3FCA2-C59F-4CEC-A0C8-4BE2B2A2035B}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{DFE54AAA-A94B-470D-A44C-4D2FD478E28F}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/StreamWriter.lvlib</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/StreamReader.lvlib</Property>
 				<Property Name="Source[1].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[1].Library.atomicCopy" Type="Bool">true</Property>
 				<Property Name="Source[1].Library.LVLIBPtopLevel" Type="Bool">true</Property>
@@ -93,16 +93,16 @@
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">Library</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[2].itemID" Type="Ref">/My Computer/StreamWriter.xml</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/StreamReader.xml</Property>
 				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="SourceCount" Type="Int">3</Property>
 				<Property Name="TgtF_companyName" Type="Str">National Instruments</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">StreamWriter Packed Library</Property>
-				<Property Name="TgtF_internalName" Type="Str">StreamWriter Packed Library</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">StreamReader Packed Library</Property>
+				<Property Name="TgtF_internalName" Type="Str">StreamReader Packed Library</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2024 National Instruments</Property>
-				<Property Name="TgtF_productName" Type="Str">StreamWriter Packed Library</Property>
-				<Property Name="TgtF_targetfileGUID" Type="Str">{3B987E42-C706-4567-98B2-94FB52FF9FF3}</Property>
-				<Property Name="TgtF_targetfileName" Type="Str">StreamWriter.lvlibp</Property>
+				<Property Name="TgtF_productName" Type="Str">StreamReader Packed Library</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{633A83E9-33AA-445C-8A17-F633DA666766}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">StreamReader.lvlibp</Property>
 				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
 			</Item>
 		</Item>
