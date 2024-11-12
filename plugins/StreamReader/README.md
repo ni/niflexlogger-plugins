@@ -28,7 +28,11 @@ This plug-in demonstrates how to read data sent by another instance of FlexLogge
 
 ![StreamReader Configuration](./StreamReaderConfiguration.jpg)
 
-- The StreamReader creates the corresponding channels that you can log.
+- The StreamReader creates the corresponding channels that you can log. You can read more about network stream end points here:
+https://www.ni.com/docs/en-US/bundle/labview/page/specifying-network-stream-endpoint-urls.html
+
+- To write data to FlexLogger channels from LabVIEW, open the Write FlexLogger Data.vi
+- Run the VI and follow the instructions on the VI to configure the StreamReader plugin to read the data in FlexLogger.
 
 ## Support
 

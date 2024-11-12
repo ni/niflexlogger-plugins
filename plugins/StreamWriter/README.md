@@ -28,7 +28,8 @@ This plug-in demonstrates how to stream data to LabVIEW or another instance of F
 
 ![StreamReader Configuration](./StreamReaderConfiguration.jpg)
 
-- The StreamReader creates the corresponding channels that you can log.
+- The StreamReader creates the corresponding channels that you can log.  You can read more about network stream end points here:
+https://www.ni.com/docs/en-US/bundle/labview/page/specifying-network-stream-endpoint-urls.html
 
 - To read the FlexLogger channels from LabVIEW, open the Read FlexLogger Data.vi
 - Enter the writer IP address if FlexLogger is running on a different machine.
