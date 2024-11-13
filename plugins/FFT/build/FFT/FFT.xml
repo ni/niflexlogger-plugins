@@ -8,6 +8,6 @@
   <OldestCompatibleVersion>0.1</OldestCompatibleVersion>
   <AliasBase>FFT</AliasBase>
   <Icon>mixed</Icon>
-  <Description>This plug-in computes the FFT of one or more channels, and outputs the result in new channels that you can log to file.</Description>
+  <Description>This plug-in computes the FFT of a channel, and outputs the result in a new channel that you can log to file.</Description>
   <VIExec>niPluginWrapper</VIExec>  
 </ProcessingElement>

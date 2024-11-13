@@ -4,7 +4,7 @@ This plug-in computes the FFT of one or more channels, and outputs the result in
 
 ## PDK version used to build the plug-in
 
-1.7
+24.5
 
 ## Supported versions of FlexLogger:
 
@@ -17,7 +17,8 @@ This plug-in computes the FFT of one or more channels, and outputs the result in
 - Configure one or more channels
 - Invoke the FFT plug-in by selecting Add channels>>Plug-in>>FFT
 - Click the configure (gear) button on the right hand side of the plug-in.
-- Click the channel picker icon to select the channels for which you want to compute the FFT and click OK.
+- Click the channel picker icon to select the channel for which you want to compute the FFT and click OK.
+Note: If the "Number of FFT Samples" is too small, multiple FFT calculations will be performed in a single cycle to ensure we don't fall behind.
 
 ![Configuration Options](./Configure.jpg)
 
