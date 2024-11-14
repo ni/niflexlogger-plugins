@@ -45,6 +45,7 @@
 					<Item Name="Waveform Consumer Channel.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/FlexLogger/SDK/PluginSDK.lvlibp/PEFClasses/SDK/Waveform Consumer Channel/Waveform Consumer Channel.lvclass"/>
 					<Item Name="Write Trace Log.vi" Type="VI" URL="/&lt;vilib&gt;/FlexLogger/SDK/PluginSDK.lvlibp/PEFClasses/SDK/Write Trace Log.vi"/>
 				</Item>
+				<Item Name="Error Code Database.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Code Database.vi"/>
 			</Item>
 			<Item Name="kernel32.dll" Type="Document" URL="kernel32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -63,7 +64,7 @@
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
 				<Property Name="Bld_localDestDir" Type="Path">/C/Users/Public/Documents/National Instruments/FlexLogger/Plugins/IOPlugins/NI_AB_PROJECTNAME</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{0C3E0C22-4E58-40C5-98D8-D670F5D28D59}</Property>
-				<Property Name="Bld_version.build" Type="Int">39</Property>
+				<Property Name="Bld_version.build" Type="Int">51</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">StreamReader.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">/C/Users/Public/Documents/National Instruments/FlexLogger/Plugins/IOPlugins/NI_AB_PROJECTNAME/StreamReader.lvlibp</Property>
