@@ -1,27 +1,38 @@
 # FlexLogger Test Sequencer Plug-in
 
-This plug-in cycles through a user specified number of steps sequentially with a user defined time period between each step. Here is a sample of what it looks like:
+This plug-in cycles through a user specified number of steps sequentially with a user defined duration for each step. The user can also define analog and digital channels to define the values in each step. Here is a sample of what it looks like:
 
 ![Test Sequencer](./Sequencer.gif)
 
 ## PDK version used to build the plug-in
 
-1.3
+24.5
 
 ## Supported versions of FlexLogger:
 
-2020 R4 and above
+2024 Q3 and above
 
 ## Getting Started
 
-- Copy the **build/Test Sequencer** folder from this repo to C:\Users\Public\Documents\National Instruments\FlexLogger\Plugins\IOPlugins
+- Copy the **build/Sequencer with Output Values** folder from this repo to C:\Users\Public\Documents\National Instruments\FlexLogger\Plugins\IOPlugins
 - Launch FlexLogger and open a project
-- Add the Test Sequencer plug-in by selecting Add channels>>Plug-in>>Test Sequencer
-- Click the configure (gear) button on the right hand side of the plug-in
-- Here you can specify the number of steps and the time to stay at each step in the sequence. 
-- There is also a boolean flag to indicate if the cycles and step should reset when the test starts. This plug-in uses a callback in the **Handle Notification.vi** to know when the test starts.
+- Add the Sequencer plug-in by selecting Add channels>>Plug-in>>Sequencer with Output Values
+- This will open the Sequence Settings UI:
+![Sequence Settings](./Settings.png)
 
-![Configuration UI](./ConfigPage.png)
+- Here you can specify the number of steps, the time to stay at each step in the sequence, sequence behaviors, and channel configurations. Each setting has detailed help that is part of the Sequence Settings UI.
+- The analog and digital channels you add can be mapped to DAQmx Analog and Digital Outputs so you can control output channels based on the values defined for the sequence:
+![Map to DAQmx](./MapDaqmxChannels.png)
+
+- It's also important to note that you can have multiple values for the channels defined during a single step and the step settings allow you to determine the behavior if the values complete before the duration of the step completes:
+![Multiple Channel Values](./MultipleChannelValues.gif)
+Note: When "Delay between values" is 0, the values will be interpolated over the duration of the step.
+
+- There is a setting named "Reset sequence when test starts" that controls whether the cycles and step counter should reset when the test starts. This plug-in uses a callback in the **Handle Notification.vi** to know when the test starts.
+
+- Another setting that determines sequence behavior is named "Only execute when test is running". When this is true, the "Reset sequence when test starts" is ignored since that will be overridden by this setting and will always cause the sequence to reset when the test starts. It will also result in the sequence not running when the test isn't running and the sequence will pause and resume when the test pasues and resumes. This is when it's important to specify the default values for the analog and digital channels since that will be what is used when the sequence is not running. When the sequence is paused, it will use the last values on the channel before it was paused. 
+
+
 
 - Press **Done**. After configuring this, there are two channels produced by this step:
 

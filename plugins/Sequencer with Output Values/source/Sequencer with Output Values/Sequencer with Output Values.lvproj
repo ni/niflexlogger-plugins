@@ -15,7 +15,6 @@
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Sequencer with Output Values.lvlib" Type="Library" URL="../Sequencer with Output Values.lvlib"/>
 		<Item Name="Sequencer with Output Values.xml" Type="Document" URL="../Sequencer with Output Values.xml"/>
-		<Item Name="Calculate Analog and Digital Channel Values.vi" Type="VI" URL="../Helper VIs/Calculate Analog and Digital Channel Values.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="PluginSDK.lvlibp" Type="LVLibp" URL="/&lt;vilib&gt;/FlexLogger/SDK/PluginSDK.lvlibp">
@@ -67,7 +66,7 @@
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
 				<Property Name="Bld_localDestDir" Type="Path">/C/Users/Public/Documents/National Instruments/FlexLogger/Plugins/IOPlugins/NI_AB_PROJECTNAME</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{F368B022-1D9F-4C25-8BE9-2C90EE850895}</Property>
-				<Property Name="Bld_version.build" Type="Int">65</Property>
+				<Property Name="Bld_version.build" Type="Int">69</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Sequencer with Output Values.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">/C/Users/Public/Documents/National Instruments/FlexLogger/Plugins/IOPlugins/NI_AB_PROJECTNAME/Sequencer with Output Values.lvlibp</Property>
