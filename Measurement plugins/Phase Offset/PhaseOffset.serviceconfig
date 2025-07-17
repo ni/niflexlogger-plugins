@@ -1,0 +1,20 @@
+{
+  "services": [
+    {
+      "displayName": "PhaseOffset",
+      "serviceClass": "PhaseOffset_Python",
+      "descriptionUrl": "",
+      "providedInterfaces": [
+        "ni.measurementlink.measurement.v1.MeasurementService",
+        "ni.measurementlink.measurement.v2.MeasurementService"
+      ],
+      "path": "start.bat",
+      "version": "1.0.0.0",
+      "annotations": {
+        "ni/service.description": "",
+        "ni/service.collection": "",
+        "ni/service.tags": []
+      }
+    }
+  ]
+}
