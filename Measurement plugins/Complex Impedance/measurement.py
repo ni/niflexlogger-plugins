@@ -20,13 +20,11 @@ measurement_service = nims.MeasurementService(
 @measurement_service.register_measurement
 @measurement_service.configuration("Voltage Channel", nims.DataType.DoubleArray1D, [0.0])
 @measurement_service.configuration("Current Channel", nims.DataType.DoubleArray1D, [0.0])
-@measurement_service.configuration("Sampling Rate (Hz)", nims.DataType.Float, 0.0)
 @measurement_service.output("Resistance", nims.DataType.DoubleArray1D)
 @measurement_service.output("Reactance", nims.DataType.DoubleArray1D)
 def measure(
     voltage_input: Iterable[float],
-    current_input: Iterable[float],
-    sampling_rate: float,
+    current_input: Iterable[float]
     ) -> tuple[
         Iterable[float],
         Iterable[float]
