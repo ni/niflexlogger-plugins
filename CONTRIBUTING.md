@@ -21,7 +21,7 @@ To contribute to this project, it is recommended that you follow these steps:
 1. Navigate inside the copied folder: **cd niflexlogger-plugins**
 1. Create your own branch of the repo: **git branch "your_branch_name"**
 1. Switch to this new branch: **git checkout "your_branch_name"**
-1. Copy the Template folder in the **plugins** directory and rename it to match your plug-in.
+1. Copy the Template folder in the **PDK plugins** directory and rename it to match your plug-in.
 1. Copy your built plug-in in the **build folder**. The built plug-in is usually found at **C:\Users\Public\Documents\National Instruments\FlexLogger\Plugins\IOPlugins**
 1. If you wish to share the source code of your plug-in, copy it in the **source folder**. The plug-in source is typically found at **C:\Users\<username>\Documents\LabVIEW Projects\FlexLogger IO Plug-ins**. If you don't want to share the source, you can delete the source folder.
 1. Modify the LICENSE and README.md file to provide details about what your plug-in does and how to use it. Pictures can be very helpful. See other plugins from this repo for how to accomplish this like the Spectrogram or Test Sequencer.
