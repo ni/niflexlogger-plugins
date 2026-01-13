@@ -1,8 +1,14 @@
-# FlexLogger Test Sequencer Plug-in
+# DEPRECATED
+
+The Sequencer with Output Values plug-in is no longer supported, and has been replaced by the [Output Sequencer Plug-in](https://github.com/ni/niflexlogger-plugins/tree/main/PDK%20plugins/Output%20Sequencer). The Output Sequencer plug-in contains all of the previous functionality, but also has many new improvements and features and is installed with FlexLogger 2026 Q1 or later. The source and build for previous FlexLogger versions can be found at the link above.
+
+ You may continue to use the Sequencer with Output Values plug-in in existing project, but it is recommended that you use the Output Sequencer Plug-in for any new projects or sequences.
+
+# FlexLogger Sequencer with Output Values Plug-in
 
 This plug-in cycles through a user specified number of steps sequentially with a user defined duration for each step. The user can also define analog and digital channels to define the values in each step. Here is a sample of what it looks like:
 
-![Test Sequencer](./Sequencer.gif)
+![Sequencer with Output Values](./Sequencer.gif)
 
 ## PDK version used to build the plug-in
 
@@ -46,9 +52,4 @@ You can have multiple instances of this plug-in if you have different sets of se
 
 You can use the logging stop trigger to have the test stop after a certain number of cycles:
 
-![Stop Test](./StopTestAfterNumberOfCycles.png)  
-
-## Support
-
-Please report any problem by filing an issue in github or in the FlexLogger forum:
-https://forums.ni.com/t5/FlexLogger/bd-p/1021
+![Stop Test](./StopTestAfterNumberOfCycles.png)
