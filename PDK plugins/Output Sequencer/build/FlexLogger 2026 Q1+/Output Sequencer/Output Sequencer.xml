@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProcessingElement>
+  <Type>6321427F-F209-418D-BF9F-CC52EB449108</Type>
+  <Name>Output Sequencer</Name>
+  <TemplateType>Plugin</TemplateType>
+  <DevelopmentKitVersion>24.5</DevelopmentKitVersion>
+  <Version>1.0</Version>
+  <OldestCompatibleVersion>0.1</OldestCompatibleVersion>
+  <AliasBase>OutputSequencer</AliasBase>
+  <Icon>input</Icon>
+  <Description>This test sequencer outputs a channel of data that represents a test state and keeps track of how many times the sequence has occurred. It also allows users to define values for analog or digital channels that can be mapped to output channels.</Description>
+  <VIExec>niPluginWrapper</VIExec>
+</ProcessingElement>
