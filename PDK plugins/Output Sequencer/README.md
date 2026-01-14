@@ -4,13 +4,14 @@ This plug-in cycles through a user specified number of steps sequentially with a
 
 ![Test Sequencer](./Sequencer.gif)
 
-<!-- The below flag is for the "Markdown All in One" Visual Studio Code plug-in which automatically updates the Table of Contents, and hides the "Table of Contents" section in the actual table of contents.--> 
+<!-- The comment below is a flag for the "Markdown All in One" Visual Studio Code plug-in which automatically updates the Table of Contents, and hides the "Table of Contents" section in the actual table of contents.--> 
 <!-- omit in toc -->
 ## Table of Contents
 
 - [FlexLogger Output Sequencer Plug-in](#flexlogger-output-sequencer-plug-in)
   - [PDK version used to build the plug-in](#pdk-version-used-to-build-the-plug-in)
   - [Supported versions of FlexLogger:](#supported-versions-of-flexlogger)
+  - [Required Software for Modifying Source](#required-software-for-modifying-source)
   - [Getting Started](#getting-started)
   - [Advanced Features](#advanced-features)
   - [Conditional Execution](#conditional-execution)
@@ -37,6 +38,15 @@ This plug-in cycles through a user specified number of steps sequentially with a
 Supported in 2024 Q3 and above.
 Included by default with installations of FlexLogger 2026 Q1 and later.
 
+## Required Software for Modifying Source
+
+- LabVIEW 2024 Q1 or 2024 Q3
+- The following packages installed from JKI VI Package Manager:
+  - JSONtext by JDP Science
+  - muParser Expression Parser API by LAVA
+
+See the [Third-Party Dependencies](#third-party-dependencies) section below for more information.
+
 ## Getting Started
 
 - Copy the **build/Output Sequencer** folder from this repo to C:\Users\Public\Documents\National Instruments\FlexLogger\Plugins\IOPlugins.
@@ -49,7 +59,7 @@ Included by default with installations of FlexLogger 2026 Q1 and later.
 
 - Here you can specify the number of steps, number of output channels, the time to stay at each step in the sequence, sequence behaviors, and channel configurations. Clicking on each row in the table will display detailed help for that step in the "Setting Description" box in the bottom-left.
 
-- For each step, you can define one or more values for each analog or digital value. For example, you can enter "1" to hold a channel at the value of 1 for the duration of the step. You can also use the `Last` keyword to hold an output at its previous value, or `Default` to set it back to its specified default value. Multiple values can be specified by using `;` as a delimiter. By default, the sequence will interpolate between the values you specify over the duration of the step, so extering "0; 5" would ramp an analog channel from 0 to 5 over the duration of the step.
+- For each step, you can define one or more values for each analog or digital value. For example, you can enter "1" to hold a channel at the value of 1 for the duration of the step. You can also use the `Last` keyword to hold an output at its previous value, or `Default` to set it back to its specified default value. Multiple values can be specified by using `;` as a delimiter. By default, the sequence will interpolate between the values you specify over the duration of the step, so entering "0; 5" would ramp an analog channel from 0 to 5 over the duration of the step.
 
 - As changes are made, the Channel Preview Graph updates to show a visual representation of one iteration of the sequence. You must click the Apply button to accept these pending settings and have them reflected in the running sequence. You can also click the Revert button to discard any pending changes and go back to the previously applied settings.
 
@@ -110,7 +120,7 @@ In order to reference other channels in the system, they must first be mapped in
 
   ![Configure Gear](./Gear.png)
 
-In the dialog, there will be channel selectors for Analog Conditional Channels and Digital Conditional Channels. Clicking the button under each setting will pop up a channel broswer which will show available channels in your system. Analog Conditional Channels will show all analog input channels in your system, such as DAQ analog inputs and arithmetic formulas. Digital Conditional Channels will show all digital input channels in your system, such as DAQ digital inputs and Boolean formulas. Selecting one or more channels and then clicking the OK button will make the channels available to be used in conditional expressions.
+In the dialog, there will be channel selectors for Analog Conditional Channels and Digital Conditional Channels. Clicking the button under each setting will pop up a channel browser which will show available channels in your system. Analog Conditional Channels will show all analog input channels in your system, such as DAQ analog inputs and arithmetic formulas. Digital Conditional Channels will show all digital input channels in your system, such as DAQ digital inputs and Boolean formulas. Selecting one or more channels and then clicking the OK button will make the channels available to be used in conditional expressions.
 
 Here is an example of selecting a Boolean formula channel named Emergency Stop:
 
@@ -135,7 +145,7 @@ The "Sequence execution" section of the settings dialog contains some conditiona
 | Enable re-triggering | This controls whether the "Start trigger condition" is checked again when a running sequence is stopped. This setting is ignored if "Start trigger condition" is empty. |
 | Stop condition | If this is true, the sequence will be immediately stopped if running, even in the middle of a step. If not running the sequence will be prevented from starting while the condition is true. This setting is ignored if empty. |
 
-Here is an example of setting a Stop condition which references a Boolean formula channel named Emergency Stop, which was shown in the [Mapping Conditional Channels](#mapping-conditional-channels) section above. The 'Emegency Stop' channel is true when there is some critical condition, so it can be checked directly (which is the equivalent of checking 'Emegency Stop' == true).
+Here is an example of setting a Stop condition which references a Boolean formula channel named Emergency Stop, which was shown in the [Mapping Conditional Channels](#mapping-conditional-channels) section above. The 'Emergency Stop' channel is true when there is some critical condition, so it can be checked directly (which is the equivalent of checking 'Emergency Stop' == true).
 
   ![Emergency Stop](./EmergencyStop.png)
 
@@ -189,7 +199,7 @@ Example channel expressions:
 
 Here is an example of a sequence which will continually repeat a step and hold the output at the last value as long as an analog input channel is greater than 7. As soon as the analog channel is less than or equal to 7, the next step (Step 2 - Ramp down) will be executed. If the analog input channel is less than 7 when this step is reached, it will be skipped entirely since it is also set as the Precondition.
 
-  ![EmergConditional Step](./ConditionalStep.png)
+  ![Conditional Step](./ConditionalStep.png)
 
 
 ### Conditional Expressions
@@ -308,5 +318,5 @@ The full list of third-party dependencies used are listed below:
 
 ## Support
 
-Please report any problem by filing an issue in github or in the FlexLogger forum:
+Please report any problem by filing an issue in GitHub or in the FlexLogger forum:
 https://forums.ni.com/t5/FlexLogger/bd-p/1021
