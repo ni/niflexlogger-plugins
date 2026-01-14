@@ -12,6 +12,11 @@ For example, the xml will have a line that looks like this: "<DevelopmentKitVers
 Minimum version of FlexLogger supported by your plug-in. Once you know the PDK version from above, use this web page to find the corresponding version of FlexLogger that supports it:
 https://www.ni.com/docs/en-US/bundle/flexlogger-plug-in-development-kit/page/software-version-compatibility.html
 
+## Required Software for Modifying Source
+
+The version of LabVIEW used to develop and build the code. Any future edits should use this version in order to not break compatability with older versions of FlexLogger.
+Also list and dependencies you code might have, such as LabVIEW toolkits or third-party packages.
+
 ## Getting Started
 
 TODO: Include documentation on how to use your plug-in. Here's a sample of how it might start:
