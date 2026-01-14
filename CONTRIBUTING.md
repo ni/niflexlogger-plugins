@@ -5,7 +5,7 @@ Contributions to *niflexlogger-plugins* are welcome from all!
 *niflexlogger-plugins* is managed via [git](https://git-scm.com), with the canonical upstream
 repository hosted on [GitHub](https://github.com/ni/niflexlogger-plugins).
 
-*niflexlogger-plugins* follows a pull-request model for contributions.  If you wish to
+*niflexlogger-plugins* follows a [fork-and-pull model](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/getting-started/about-collaborative-development-models#fork-and-pull-model) for contributions.  If you wish to
 contribute, you will need to create a GitHub account, fork this project, push a
 branch with your changes to your project, and then submit a pull request.
 
@@ -16,24 +16,58 @@ See [GitHub's official documentation](https://help.github.com/articles/using-pul
 To contribute to this project, it is recommended that you follow these steps:
 
 1. Install [Git](https://git-scm.com/downloads) on your machine if you don't already have it. The following steps are using a basic cmd window, but other applications can be used to interact with git like MSVC, Git GUI, Sourcetree, GitDesktop, etc.
-1. Open a cmd window and navigate to the local drive where you want to copy the FlexLogger Plugin repo. For example (create folder if needed): > cd c:\GitDev
-1. Clone the niflexlogger-plugins repo to your local drive: **git clone https://github.com/ni/niflexlogger-plugins.git**
-1. Navigate inside the copied folder: **cd niflexlogger-plugins**
-1. Create your own branch of the repo: **git branch "your_branch_name"**
-1. Switch to this new branch: **git checkout "your_branch_name"**
-1. Copy the Template folder in the **plugins** directory and rename it to match your plug-in.
-1. Copy your built plug-in in the **build folder**. The built plug-in is usually found at **C:\Users\Public\Documents\National Instruments\FlexLogger\Plugins\IOPlugins**
-1. If you wish to share the source code of your plug-in, copy it in the **source folder**. The plug-in source is typically found at **C:\Users\<username>\Documents\LabVIEW Projects\FlexLogger IO Plug-ins**. If you don't want to share the source, you can delete the source folder.
-1. Modify the LICENSE and README.md file to provide details about what your plug-in does and how to use it. Pictures can be very helpful. See other plugins from this repo for how to accomplish this like the Spectrogram or Test Sequencer.
-1. Add all the modified files to the commit using this command: **git add -A**
-1. Commit your changes locally. **git commit -m "Initial commit comments"**
-1. Push your changes to GitHub: **git push --set-upstream origin "your_branch_name"**
-1. Now you can view your changes in the GitHub web page to make sure everything looks as you expect. From the [main page](https://github.com/ni/niflexlogger-plugins/tree/main) click on the "main" pull down button and select your branch.
-1. Navigate to the README.md in your plugin and verify everything looks good. You can edit the README.md file from the web page and commit changes from the web page.
-1. For any additional changes that need to pushed to GitHub, call these commands: **git add -A**, **git commit -m "Useful comment about change"**, **git push**
-1. Once the code is ready for review, go to the[main page](https://github.com/ni/niflexlogger-plugins/tree/main) and click on the "Compare & pull request" green button at the top for your branch.
-1. Fill out the description and click **Create pull request**.
-1. Add a reviewer on the right and a FlexLogger developer will review it. Once any review feedback has been addressed, and it's approved, you can click on the **Merge pull request** button to submit the changes.
+2. Go to the [niflexlogger-plugins GitHub page](https://github.com/ni/niflexlogger-plugins). Click the **Fork** button in the top-right corner of the page. This creates a copy of the repository under your GitHub account. You can now create branches freely in your fork and later submit a pull request to the original repository.
+3. Open a cmd window and navigate to the local drive where you want to copy the FlexLogger Plugin repo. For example (create folder if needed): > cd c:\GitDev
+4. Clone your fork niflexlogger-plugins repo to your local drive:
+
+```bash
+git clone https://github.com/<your-username>/niflexlogger-plugins.git
+``` 
+5. Navigate inside the copied folder:
+
+```bash
+cd niflexlogger-plugins
+```
+6. Create your own branch of the repo:
+
+```bash
+ git branch "your_branch_name"
+```
+7. Switch to this new branch:
+
+```bash
+ git checkout "your_branch_name"
+```
+8. Copy the Template folder in the **plugins** directory and rename it to match your plug-in.
+9. Copy your built plug-in in the **build folder**. The built plug-in is usually found at **C:\Users\Public\Documents\National Instruments\FlexLogger\Plugins\IOPlugins**
+10. If you wish to share the source code of your plug-in, copy it in the **source folder**. The plug-in source is typically found at **C:\Users\<username>\Documents\LabVIEW Projects\FlexLogger IO Plug-ins**. If you don't want to share the source, you can delete the source folder.
+11. Modify the LICENSE and README.md file to provide details about what your plug-in does and how to use it. Pictures can be very helpful. See other plugins from this repo for how to accomplish this like the Spectrogram or Test Sequencer.
+12. Add all the modified files to the commit using this command:
+
+```bash
+ git add -A
+ ```
+
+13. Commit your changes locally:
+
+```bash
+git commit -m "Initial commit comments"
+```
+
+14. Push your changes to GitHub: **git push --set-upstream origin "your_branch_name"**
+15. Now you can view your fork changes in the GitHub web page to make sure everything looks as you expect. From the [main page](https://github.com/ni/niflexlogger-plugins/tree/main) click **Compare & pull request**.
+16. Navigate to the README.md in your plugin and verify everything looks good. You can edit the README.md file from the web page and commit changes from the web page.
+17. For any additional changes that need to pushed to GitHub, call these commands:
+
+```bash
+ git add -A
+ git commit -m "Useful comment about change"
+ git push
+ ```
+
+18. Once the code is ready for review, go to the [main page](https://github.com/ni/niflexlogger-plugins/tree/main) and click on the "Compare & pull request" green button at the top for your branch.
+19. Fill out the description and click **Create pull request**.
+20. Add a reviewer on the right and a FlexLogger developer will review it. Once any review feedback has been addressed, and it's approved, your changes will be merged.
 
 
 # Developer Certificate of Origin (DCO)
