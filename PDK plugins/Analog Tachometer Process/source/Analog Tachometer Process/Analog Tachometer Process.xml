@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProcessingElement>
+  <Type>933D15C6-E2A9-4DFD-8D74-6869ED3FA17D</Type>
+  <Name>Analog Tachometer Process</Name>
+  <TemplateType>Plugin</TemplateType>
+  <DevelopmentKitVersion>25.5</DevelopmentKitVersion>
+  <Version>0.1</Version>
+  <OldestCompatibleVersion>0.1</OldestCompatibleVersion>
+  <AliasBase>AnalogTachometerProcess</AliasBase>
+  <Icon>mixed</Icon>
+  <Description>Locates tachometer pulse positions in an analog tachometer signal from a waveform channel using the number of generated pulses per revolution, the pulse width, and the arrival edge of the tachometer pulse.</Description>
+  <VIExec>niPluginWrapper</VIExec>  
+</ProcessingElement>
