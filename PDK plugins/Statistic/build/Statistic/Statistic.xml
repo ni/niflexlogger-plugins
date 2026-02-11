@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProcessingElement>
+  <Type>1A143701-A090-4239-ACFA-03CAD635481D</Type>
+  <Name>Statistic</Name>
+  <TemplateType>Plugin</TemplateType>
+  <DevelopmentKitVersion>25.8</DevelopmentKitVersion>
+  <Version>0.1</Version>
+  <OldestCompatibleVersion>0.1</OldestCompatibleVersion>
+  <AliasBase>Statistic</AliasBase>
+  <Icon>mixed</Icon>
+  <Description>statistic analysis of waveforms like Max, Min, Average....</Description>
+  <VIExec>niPluginWrapper</VIExec>  
+</ProcessingElement>

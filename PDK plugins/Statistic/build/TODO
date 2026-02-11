@@ -1,0 +1,4 @@
+# Instructions
+
+Copy the build version of your plug-in in this directory. You can find the build of your plug-in at this location:
+C:\Users\Public\Documents\National Instruments\FlexLogger\Plugins\IOPlugins\<Your plug-in name>
