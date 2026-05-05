@@ -1,4 +1,4 @@
-# FlexLogger FFT Plug-in
+# FlexLogger DFT_Spectra Plug-in
 
 This plug-in computes the Discrete Fourier Transform (DFT) of one or more channels, and displays the frequency-spectra results in a modal window.
 
