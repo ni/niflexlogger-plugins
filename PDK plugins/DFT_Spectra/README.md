@@ -43,7 +43,7 @@ Invalid configuration values will be coerced. Coerced values will be visible whe
 - Revert configuration changes by pressing **Cancel**
 
 ## Required Software for Modifying Source
-- LabVIEW 2024 Q1 or 2024 Q3
+- LabVIEW (Full Edition) 2024 Q1 or 2024 Q3
 - Sound and Vibration Toolkit for LabVIEW 2023 Q3 or later
 
 ## Support
