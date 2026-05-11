@@ -2,6 +2,8 @@
 
 This plug-in computes the Discrete Fourier Transform (DFT) of one or more channels, and displays the frequency-spectra results in a modal window.
 
+<img width="1652" height="652" alt="DFT" src="https://github.com/user-attachments/assets/f925aeb3-2225-440e-a3c0-f0ea776d03ea" />
+
 ## PDK version used to build the plug-in
 
 24.5
