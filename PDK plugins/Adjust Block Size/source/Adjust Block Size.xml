@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProcessingElement>
+  <Type>94C1FB57-30D0-49F8-9483-4EF1DF6A9CAE</Type>
+  <Name>Adjust Block Size</Name>
+  <TemplateType>Plugin</TemplateType>
+  <DevelopmentKitVersion>24.5</DevelopmentKitVersion>
+  <Version>0.1</Version>
+  <OldestCompatibleVersion>0.1</OldestCompatibleVersion>
+  <AliasBase>AdjustBlockSize</AliasBase>
+  <Icon>mixed</Icon>
+  <Description>This plugin accepts continuous data at the block duration provided by FlexLogger and returns block duration as configured by the user. All input channels must have identical timing.</Description>
+  <VIExec>niPluginWrapper</VIExec>  
+</ProcessingElement>
