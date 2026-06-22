@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProcessingElement>
+  <Type>F4419FDC-BE03-4748-A440-E010220283FD</Type>
+  <Name>Tone Measurements</Name>
+  <TemplateType>Plugin</TemplateType>
+  <DevelopmentKitVersion>25.5</DevelopmentKitVersion>
+  <Version>0.1</Version>
+  <OldestCompatibleVersion>0.1</OldestCompatibleVersion>
+  <AliasBase>ToneMeasurements</AliasBase>
+  <Icon>mixed</Icon>
+  <Description>This plugin computes nominal single-tone measurements for a waveform channel. Measurements include DC level, AC level, band level, fundamental frequency, fundamental amplitude, SFDR, SINAD, SNR, THD, and harmonic amplitudes.</Description>
+  <VIExec>niPluginWrapper</VIExec>  
+</ProcessingElement>
