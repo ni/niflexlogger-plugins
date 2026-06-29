@@ -18,6 +18,8 @@ Harmonic | Harmonic Frequencies<br>Harmonic Amplitudes | Fixed reference frequen
 Sideband | Center and Sideband Frequencies<br>Amplitudes | Number of sidebands and spacing from center
 Band | b1<br>b2<br>b2-b1<br>(b2-b1)/(f2-f1)<br>Band Average<br>Band Power | Band edges move independently or specify 'fixed bandwidth' to move together
 
+Enable and configure cursors by right clicking in the graph plot area and selecting _Configure Cursors..._
+
 ### Graph View Settings
 Some applications favor a particular view of the spectrum. While running, several view options can be configured to inspect the data and identify the options that provide the best data insights.
 
@@ -30,6 +32,8 @@ X-axis Mapping | Linear/Logarithmic
 Y-axis Mapping | Linear/Logarithmic/dB
 Y-axis Scaling | Magnitude/Power<br>Spectral Density/RMS/Peak/Peak-Peak
 Frequency Weighting:<br>Integration/Differentiation | Double Integration/Single Integration/No Change/Single Differentiation/Double Differentiation
+
+View and Modify _View Settings_ using the graph right-click menus.
 
 ## Multiple Instances
 This plug-in supports multiple instances within a FlexLogger project. Each instance maintains its own channel mapping, configuration, averaging state, and view state.
