@@ -1,0 +1,51 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended"
+  ],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "description": "Track Output Sequencer third-party dependencies",
+      "managerFilePatterns": [
+        "/^PDK plugins\\/Output Sequencer\\/vipm\\.toml$/"
+      ],
+      "matchStrings": [
+        "# renovate: datasource=(?<datasource>\\S+) depName=(?<depName>\\S+) packageName=(?<packageName>\\S+) versioning=(?<versioning>\\S+)\\s+\\S+\\s*=\\s*\"(?<currentValue>[^\"]+)\"",
+        "# renovate: datasource=(?<datasource>\\S+) depName=(?<depName>\\S+) packageName=(?<packageName>\\S+) versioning=(?<versioning>\\S+) currentValue=(?<currentValue>\\S+)"
+      ]
+    }
+  ],
+  "customDatasources": {
+    "vipm": {
+      "defaultRegistryUrlTemplate": "https://www.vipm.io/package/{{packageName}}/",
+      "format": "html"
+    }
+  },
+  "packageRules": [
+    {
+      "matchDatasources": [
+        "custom.vipm"
+      ],
+      "extractVersion": "^#(?<version>\\d+(?:\\.\\d+)+)$"
+    },
+    {
+      "matchDatasources": [
+        "github-tags"
+      ],
+      "matchPackageNames": [
+        "beltoforion/muparser"
+      ],
+      "extractVersion": "^v(?<version>\\d+(?:\\.\\d+)+)$"
+    },
+    {
+      "matchFileNames": [
+        "PDK plugins/Output Sequencer/vipm.toml"
+      ],
+      "addLabels": [
+        "dependencies",
+        "Output Sequencer"
+      ]
+    }
+  ]
+}
