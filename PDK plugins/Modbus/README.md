@@ -11,10 +11,11 @@ This plug-in functions as a Modbus master which can communicate over TCP with a 
   - [Supported versions of FlexLogger:](#supported-versions-of-flexlogger)
   - [Required Software for Modifying Source](#required-software-for-modifying-source)
   - [Getting Started](#getting-started)
-    - [Configuring Channels](#configuring-channels)
-      - [Boolean Channels](#boolean-channels)
-      - [Numeric Channels](#numeric-channels)
-      - [String Channels](#string-channels)
+  - [Configuring Channels](#configuring-channels)
+    - [General Channel Settings](#general-channel-settings)
+    - [Boolean Channels](#boolean-channels)
+    - [Numeric Channels](#numeric-channels)
+    - [String Channels](#string-channels)
   - [Advanced Settings](#advanced-settings)
     - [Multi-register order](#multi-register-order)
     - [Signed integer representation](#signed-integer-representation)
@@ -51,28 +52,32 @@ Note: The NI Modbus Library ships with an example Modbus slave device which can 
 - Press **OK**.
 - Channels will be created for each of the channels you added in the plug-in dialog.
 
-### Configuring Channels
-- Channels can be configured by double-clicking the channel or clicking the Configure gear icon on the left of the channel.
-- Each channel will have parameters for the Modbus table as well as address (or starting address)
-  - The available Modbus tables will depend on the channel type and read/write direction (see below for details).
-  - The address is a 0-indexed value relative to the first address of the given table. Note that some device documentation may give addresses in 1-indexed notation or with a 5-digit notation (where each table starts with a different first digit). For example, an address of 40001 is the first Holding register address which corresponds to a 0-indexed address of 0. Similarly, a Discrete Input address of 10050 would correspond to a 0-indexed address of 49 (drop the leading digit, then subtract 1).
+## Configuring Channels
+Channels can be configured by double-clicking the channel or clicking the Configure gear icon on the left of the channel. Each channel will have parameters for the Modbus table as well as address (or starting address).
+
+  ### General Channel Settings
+  - The available Modbus tables will depend on the channel type and read/write direction (see below sections for details).
+  - The address is a 0-indexed value relative to the first address of the selected table. Note that some device documentation may give addresses in 1-indexed notation or with a 5-digit notation (where each table starts with a different first digit). For example, an address of 40001 is the first Holding register address which corresponds to a 0-indexed address of 0. Similarly, a Discrete Input address of 10050 would correspond to a 0-indexed address of 49 (drop the leading digit, then subtract 1).
   - By default the address will start as -1 (which is an invalid address) and no communication will be made with the slave device for this channel. Once a valid address is selected, the channel value will be read from or written to the slave device.
 
-  #### Boolean Channels
-  - Boolean input channels can read from the Discrete Inputs and Coils.
+  ### Boolean Channels
+  - Boolean input channels can read from Discrete Inputs and Coils.
   - Boolean output channels can write to Coils.
 
-  #### Numeric Channels
-  - Numeric input channels can read from the Input Registers and Holding Registers.
+  ### Numeric Channels
+  - Numeric input channels can read from Input Registers and Holding Registers.
   - Numeric output channels can write to Holding Registers.
   - The Modbus plug-in supports different numeric representations and sizes:
-    - **8-bit (Half register)**: A 16-bit register is read and the lower (least significant) or upper (most significant) byte is interpreted as an 8-bit signed or unsigned integer. Note that writing an 8-bit value to a register will not affect the value stored in the other byte.
-    - **16-bit (One register)**: A 16-bit register is read and interpreted as a 16-bit signed or unsigned integer.
-    - **32-bit (Two registers)**: Two 16-bit registers are read starting at the specified address and interpreted as a 32-bit signed or unsigned integer, or as a single-precision IEEE 754 floating-point number.
-    - **64-bit (Four registers)**: Four 16-bit registers are read starting at the specified address and interpreted as a 364-bit signed or unsigned integer, or as a double-precision IEEE 754 floating-point number.
+    
+    | Size | Description |
+    |--------|------------|
+    | 8-bit (Half register) | A 16-bit register is read or written to and the lower (least significant) or upper (most significant) byte is interpreted as an 8-bit signed or unsigned integer. Note that writing an 8-bit value to a register will not affect the value stored in the other byte. |
+    | 16-bit (One register) | A 16-bit register is read or written to and the value is interpreted as a 16-bit signed or unsigned integer. |
+    | 32-bit (Two registers) | Two 16-bit registers are read or written to starting at the specified address and the value is interpreted as a 32-bit signed or unsigned integer, or as a single-precision IEEE 754 floating-point number. |
+    | 64-bit (Four registers) | Four 16-bit registers are read or written to starting at the specified address and the value is interpreted as a 64-bit signed or unsigned integer, or as a double-precision IEEE 754 floating-point number. |
 
-  #### String Channels
-  - String input channels can read from the Input Registers and Holding Registers.
+  ### String Channels
+  - String input channels can read from Input Registers and Holding Registers.
   - String output channels are not supported.
   - For each string channel you define a starting address and the number of registers to read. Each 16-bit register is interpreted as two 8-bit ASCII characters, so the maximum length of the string returned will be two times the number of registers read.
   - Any null character (0x00) will be interpreted as the end of the string, so the string returned may be trimmed and less than the maximum string length.
