@@ -9,8 +9,8 @@ This plug-in cycles through a user specified number of steps sequentially with a
 ## Table of Contents
 
 - [FlexLogger Output Sequencer Plug-in](#flexlogger-output-sequencer-plug-in)
+  - [Supported versions of FlexLogger](#supported-versions-of-flexlogger)
   - [PDK version used to build the plug-in](#pdk-version-used-to-build-the-plug-in)
-  - [Supported versions of FlexLogger:](#supported-versions-of-flexlogger)
   - [Required Software for Modifying Source](#required-software-for-modifying-source)
   - [Getting Started](#getting-started)
   - [Advanced Features](#advanced-features)
@@ -27,20 +27,22 @@ This plug-in cycles through a user specified number of steps sequentially with a
     - [Constants](#constants)
   - [Sequencer States](#sequencer-states)
   - [Third-Party Dependencies](#third-party-dependencies)
+  - [Version History](#version-history)
   - [Support](#support)
+
+## Supported versions of FlexLogger
+
+The most recent version 1.1.0 is supported in FlexLogger 2026 Q4 and above.
+
+The intial 1.0.0 release found in the build directory are supported in 2024 Q3 and above, and included by default with installations of FlexLogger 2026 Q1 and later. Note that FlexLogger 2026 Q4 installation includes version 1.0.0 of the plug-in by default, but it can be replaced with version 1.1.0 from the build directory.
 
 ## PDK version used to build the plug-in
 
-24.5
-
-## Supported versions of FlexLogger:
-
-Supported in 2024 Q3 and above.
-Included by default with installations of FlexLogger 2026 Q1 and later.
+This plug-in was built using version 26.8 (2026 Q4) of the FlexLogger Plug-in Development Kit.
 
 ## Required Software for Modifying Source
 
-- LabVIEW 2024 Q1 or 2024 Q3
+- LabVIEW 2026 Q1 or 2026 Q3
 - The following packages installed from JKI VI Package Manager:
   - JSONtext by JDP Science
   - muParser Expression Parser API by LAVA
@@ -304,17 +306,21 @@ Example conditional expressions:
 ## Third-Party Dependencies
 
 In order to open and build the source code, you will need to install the following packages using JKI VI Package Manager:
-- JSONtext by JDP Science
+- JSONtext by JDP Science (version 1.9.1.125 or later)
 - muParser Expression Parser API by LAVA
 
-The full list of third-party dependencies used are listed below:
+The full list of third-party dependencies and versions used in the built plug-in are listed below:
 
-| Dependency | Author | Repo | License |
-| ----------- | ----------- |----------- | ----------- |
-| [JSONtext](https://www.vipm.io/package/jdp_science_jsontext/) | JDP Science | [Bitbucket](https://bitbucket.org/drjdpowell/jsontext/src/master/) | [License](./third_party/JDP%20Science/license%20JSONtext.txt) |
-| [JDP Science Common Utilities](https://www.vipm.io/package/jdp_science_lib_common_utilities/) | JDP Science |  | [License](./third_party/JDP%20Science/license.txt) |
-| [muParser API for LabVIEW](https://www.vipm.io/package/lv_muparser/) | Ryan Porter | [GitHub](https://github.com/rfporter/LV-muParser) | [License](./third_party/LV-muParser/LICENSE.txt) |
-| [muParser - Fast Math Parser Library](https://beltoforion.de/en/muparser/) | Ingo Berg | [GitHub](https://github.com/beltoforion/muparser) | [License](./third_party/muparser/LICENSE.txt) |
+| Dependency | Author | Repo | License | Version |
+| ---------- | ------ |----- | ------- | ------- |
+| [JSONtext](https://www.vipm.io/package/jdp_science_jsontext/) | JDP Science | [Bitbucket](https://bitbucket.org/drjdpowell/jsontext/src/master/) | [License](./third_party/JDP%20Science/license%20JSONtext.txt) | 1.9.1.125 |
+| [JDP Science Common Utilities](https://www.vipm.io/package/jdp_science_lib_common_utilities/) | JDP Science |  | [License](./third_party/JDP%20Science/license.txt) | 1.4.2.19 |
+| [muParser API for LabVIEW](https://www.vipm.io/package/lv_muparser/) | Ryan Porter | [GitHub](https://github.com/rfporter/LV-muParser) | [License](./third_party/LV-muParser/LICENSE.txt) | 3.1.2.1 |
+| [muParser - Fast Math Parser Library](https://beltoforion.de/en/muparser/) | Ingo Berg | [GitHub](https://github.com/beltoforion/muparser) | [License](./third_party/muparser/LICENSE.txt) | 2.3.5 |
+
+## Version History
+
+See the [Changelog](CHANGELOG.md) for a full list of changes.
 
 ## Support
 

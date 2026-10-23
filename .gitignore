@@ -2,5 +2,9 @@
 .vscode
 __pycache__
 
+# LabVIEW metadata (from https://github.com/github/gitignore/blob/main/LabVIEW.gitignore)
 *.aliases
 *.lvlps
+*.lvprojstate
+.cache/
+*.UserState

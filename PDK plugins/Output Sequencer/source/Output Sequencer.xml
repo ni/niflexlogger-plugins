@@ -3,8 +3,8 @@
   <Type>6321427F-F209-418D-BF9F-CC52EB449108</Type>
   <Name>Output Sequencer</Name>
   <TemplateType>Plugin</TemplateType>
-  <DevelopmentKitVersion>24.5</DevelopmentKitVersion>
-  <Version>1.0</Version>
+  <DevelopmentKitVersion>26.8</DevelopmentKitVersion>
+  <Version>1.1.0</Version>
   <OldestCompatibleVersion>0.1</OldestCompatibleVersion>
   <AliasBase>OutputSequencer</AliasBase>
   <Icon>input</Icon>
