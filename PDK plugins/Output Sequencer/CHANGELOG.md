@@ -7,6 +7,8 @@ All notable changes to this project will be documented in this file.
 ### Changed
 
 - Call "Write Check for Cyclic Dependencies.vi" in "Initialize.vi" to disable cyclic dependency checking for the plug-in
+- Change Apply Settings to use the current value of "Show confirmation dialogs" instead of the applied value to decide whether to prompt for confirmation
+- Fix some UI visual glitches
 - Uppdated PDK version and minimum FlexLogger version to 2026 Q4 (26.8)
 - Updated dependencies and LabVIEW version to 2026 (re-saved VIs in current version)
 - Updated the readme with new version information
